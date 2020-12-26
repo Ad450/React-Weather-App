@@ -83,7 +83,7 @@ function WeatherResults(props) {
         <div className="weather-card">
           <h4 className="weather-header">{weatherList[0].description}</h4>
           <div>
-            <img src={weatherIcon} alt="icon_image" />
+            <img className="weather-image" src={weatherIcon} alt="icon_image" />
           </div>
         </div>
       )}

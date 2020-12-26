@@ -54,3 +54,7 @@
 .weather-header {
   text-align: center;
 }
+.weather-image {
+  align-content: center;
+  padding-left: 90px;
+}

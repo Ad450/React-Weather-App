@@ -1,0 +1,56 @@
+.header-text {
+  margin-top: 0px;
+  padding: 90px 150px;
+  box-sizing: border-box;
+  font-size: 90px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  text-align: center;
+  color: rgb(235, 155, 155);
+}
+
+@media (max-width: 780px) {
+  .header-text {
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-top: 60px;
+    padding-left: 0px;
+    width: 350px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    font-weight: 800;
+    margin-left: 20px;
+    color: rgb(235, 155, 155);
+    text-align: center;
+  }
+
+  .header {
+    margin-bottom: 50px;
+    box-sizing: border-box;
+  }
+}
+
+.spinner {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.weather-card {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+  max-width: 400px;
+}
+
+.customButton {
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.country-empty {
+  color: red;
+  text-align: center;
+}
+.weather-header {
+  text-align: center;
+}

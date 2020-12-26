@@ -1,0 +1,93 @@
+@media (max-width: 900px) and (min-width: 360px) {
+  .enter-input {
+    font-size: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  .customButton {
+    padding: 15px 40px;
+  }
+
+  .input-form {
+    padding: 15px 40px;
+    max-width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.input-form {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid lightgrey;
+  padding: 15px 60px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 4 gray;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.enter-input {
+  margin-bottom: 20px;
+  max-width: 300px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding: 20px 50px;
+  box-sizing: border-boxs;
+  font-size: 16px;
+}
+
+.customButton {
+  background-color: grey;
+  padding: 15px 90px;
+  max-width: 300px;
+  font-size: 12px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 400;
+}
+
+.customButton:hover {
+  border: 2px solid lightgrey;
+  background-color: lightgrey;
+  color: grey;
+}
+
+.form-header {
+  color: grey;
+  margin: 0px;
+}
+
+.enter-input:hover {
+  border-color: gray;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(248, 37, 37);
+}
+
+.link:hover {
+  color: grey;
+}
+
+.form-group {
+  max-width: 326px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+
+.form-control {
+  max-width: 100%;
+}
+
+.form-control:focus {
+  border-color: rgb(248, 37, 37) !important;
+}

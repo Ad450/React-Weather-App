@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import Header from "./components/Header";
+import "./index.css";
+import { BrowserRouter, Route } from "react-router-dom";
+import { CountryProvider } from "./components/enteredCountryContext";
+import WeatherResults from "./components/WeatherResults";
 
 function App() {
+  const [countryName, setCountryName] = React.useState("");
+
+  function changeName(newName) {
+    setCountryName(newName);
+  }
+
+  useEffect(() => {
+    setCountryName("");
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CountryProvider>
+      <BrowserRouter>
+        <Route path="/" exact>
+          <Header name={countryName} changeCountry={changeName} />
+        </Route>
+        <Route path="/weatherResults">
+          <WeatherResults name={countryName} />
+        </Route>
+      </BrowserRouter>
+    </CountryProvider>
   );
 }
 
